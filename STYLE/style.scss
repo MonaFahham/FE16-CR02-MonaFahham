@@ -4,11 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: gray;
     padding: 1% 8% 1% 7%;
-    // height: 10vh;
-    // gap: 10px;
-    // flex-wrap: wrap;
     .logo {
         font-family: "Great Vibes", cursive;
         font-size: 236%;
@@ -49,7 +45,6 @@
         list-style-type: none;
         .menu_items {
             flex-basis: 12%;
-            // margin-top: -1vh;
             a {
                 font-size: 118%;
                 text-decoration: none;
@@ -68,12 +63,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: yellow;
-    // height: 100vh;
-    // gap: 0%;
     flex-wrap: wrap;
     margin: 1vw 3vh;
-    // padding: 0vw 16vh;
     .image {
         background-color: white;
         padding: 2%;
@@ -270,14 +261,11 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        // height: 3vh;
-        // background-color: black;
         .icon-item {
             height: 4vh;
             align-self: center;
             background-size: contain;
             background-repeat: no-repeat;
-            // margin-top: -0.75vh;
         }
         .icon-instagram {
             background-image: url(../IMG/instagram-icon.png);
