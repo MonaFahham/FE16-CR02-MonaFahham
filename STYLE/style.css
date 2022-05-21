@@ -15,7 +15,10 @@
 
 .header_container .logo {
   font-family: "Great Vibes", cursive;
-  font-size: 250%;
+  font-size: 236%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header_container .search_header {
@@ -60,12 +63,12 @@
 }
 
 .nav .menu .menu_items {
-  -ms-flex-preferred-size: 11%;
-      flex-basis: 11%;
-  margin-top: -1vh;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
 }
 
 .nav .menu .menu_items a {
+  font-size: 118%;
   text-decoration: none;
   color: black;
 }
@@ -404,24 +407,24 @@
 }
 
 .footer .icon .icon-item {
-  -ms-flex-preferred-size: 2vw;
-      flex-basis: 2vw;
+  height: 4vh;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  height: 3vh;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .footer .icon .icon-instagram {
   background-image: url(../IMG/instagram-icon.png);
+  -ms-flex-preferred-size: 2.5vw;
+      flex-basis: 2.5vw;
   height: 3vh;
+  margin-top: -0.5vh;
 }
 
 .footer .icon .icon-facebook {
   background-image: url(../IMG/fb-icon.png);
-  height: 4vh;
   -ms-flex-preferred-size: 3vw;
       flex-basis: 3vw;
   margin-top: -0.75vh;
@@ -429,6 +432,9 @@
 
 .footer .icon .icon-youtube {
   background-image: url(../IMG/yt-icon.png);
+  -ms-flex-preferred-size: 1.75vw;
+      flex-basis: 1.75vw;
+  margin-top: -0.1vh;
 }
 
 .footer .copyright {
@@ -460,7 +466,26 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+  .nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+  }
+  .nav .menu .menu_items {
+    -ms-flex-preferred-size: 13%;
+        flex-basis: 13%;
+    padding-left: 1vw;
+  }
+  .nav .menu .menu_items a {
+    font-size: 85%;
+    text-decoration: none;
+    color: black;
+  }
   .main_content {
     gap: 0px;
   }
@@ -477,24 +502,66 @@
     margin-right: 20px;
     margin-left: 10px;
   }
+  .footer .icon .icon-item {
+    -ms-flex-preferred-size: 4vw;
+        flex-basis: 4vw;
+  }
+  .footer .icon .icon-item .icon-facebook {
+    height: 1vh;
+    padding-right: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .main_content {
+  .header_container .logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 150%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_container .search_header .recipe #recipe_text {
+    font-size: 85%;
+  }
+  .header_container .search_header .search .search_icon {
+    width: 3vw;
+    margin-top: 0.7vh;
+  }
+  .header_container .main_content {
     gap: 0;
   }
-  .main_content .image {
+  .header_container .main_content .image {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin: 3vw 5vh;
   }
-  .footer .footer_menu .footer_menu_items .footer_menu_item_li {
+  .header_container .nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .header_container .nav .menu .menu_items a {
+    font-size: 50%;
+    text-decoration: none;
+    color: black;
+    padding: 0 3vw;
+  }
+  .header_container .footer .footer_menu .footer_menu_items .footer_menu_item_li {
     -ms-flex-preferred-size: unset;
         flex-basis: unset;
   }
-  .footer .footer_menu .footer_menu_items .vertical_line {
+  .header_container .footer .footer_menu .footer_menu_items .vertical_line {
     margin-right: 20px;
     margin-left: 10px;
+  }
+  .header_container .footer .icon .icon-item {
+    -ms-flex-preferred-size: 6vw;
+        flex-basis: 6vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

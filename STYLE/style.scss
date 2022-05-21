@@ -11,7 +11,8 @@
     // flex-wrap: wrap;
     .logo {
         font-family: "Great Vibes", cursive;
-        font-size: 250%;
+        font-size: 236%;
+        align-items: center;
     }
     .search_header {
         display: flex;
@@ -47,9 +48,10 @@
         justify-content: center;
         list-style-type: none;
         .menu_items {
-            flex-basis: 11%;
-            margin-top: -1vh;
+            flex-basis: 12%;
+            // margin-top: -1vh;
             a {
+                font-size: 118%;
                 text-decoration: none;
                 color: black;
             }
@@ -271,24 +273,27 @@
         // height: 3vh;
         // background-color: black;
         .icon-item {
-            flex-basis: 2vw;
+            height: 4vh;
             align-self: center;
-            height: 3vh;
             background-size: contain;
             background-repeat: no-repeat;
+            // margin-top: -0.75vh;
         }
         .icon-instagram {
             background-image: url(../IMG/instagram-icon.png);
+            flex-basis: 2.5vw;
             height: 3vh;
+            margin-top: -0.5vh;
         }
         .icon-facebook {
             background-image: url(../IMG/fb-icon.png);
-            height: 4vh;
             flex-basis: 3vw;
             margin-top: -0.75vh;
         }
         .icon-youtube {
             background-image: url(../IMG/yt-icon.png);
+            flex-basis: 1.75vw;
+            margin-top: -0.1vh;
         }
     }
     .copyright {
@@ -314,7 +319,23 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+    .nav {
+        .menu {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            .menu_items {
+                flex-basis: 13%;
+                padding-left: 1vw;
+                a {
+                    font-size: 85%;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
     .main_content {
         gap: 0px;
         .image {
@@ -334,26 +355,77 @@
                 }
             }
         }
+        .icon {
+            .icon-item {
+                flex-basis: 4vw;
+                .icon-facebook {
+                    height: 1vh;
+                    padding-right: 10px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-    .main_content {
-        gap: 0;
-        .image {
-            flex-basis: 100%;
-            margin: 3vw 5vh;
+    .header_container {
+        .logo {
+            font-family: "Great Vibes", cursive;
+            font-size: 150%;
+            align-items: center;
         }
-    }
-    .footer {
-        .footer_menu {
-            .footer_menu_items {
-                .footer_menu_item_li {
-                    flex-basis: unset;
+        .search_header {
+            .recipe {
+                #recipe_text {
+                    font-size: 85%;
                 }
-                .vertical_line {
-                    margin-right: 20px;
-                    margin-left: 10px;
+            }
+            .search {
+                .search_icon {
+                    width: 3vw;
+                    margin-top: 0.7vh;
+                }
+            }
+        }
+        .main_content {
+            gap: 0;
+            .image {
+                flex-basis: 100%;
+                margin: 3vw 5vh;
+            }
+        }
+        .nav {
+            .menu {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                padding-left: 0;
+                .menu_items {
+                    a {
+                        // flex-basis: 13%;
+                        font-size: 50%;
+                        text-decoration: none;
+                        color: black;
+                        padding: 0 3vw;
+                    }
+                }
+            }
+        }
+        .footer {
+            .footer_menu {
+                .footer_menu_items {
+                    .footer_menu_item_li {
+                        flex-basis: unset;
+                    }
+                    .vertical_line {
+                        margin-right: 20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .icon {
+                .icon-item {
+                    flex-basis: 6vw;
                 }
             }
         }
